@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.vmin {
+	background: hsla(196, 100%, 55%, 0.3);
+	height: 400px;
+	width: 50vmin;
+}
