@@ -1,0 +1,26 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+@NgModule({
+	imports: [BrowserModule],
+	providers: [Logger],
+	declorations: [AppComponent],
+	exports: [AppComponent],
+	bootsrap: [AppComponent]
+})
+
+export class AppModule { }
+
+/* Launch an application by bootstrapping its root module
+* I'm likely to bootstrap the AppModule in a main.ts file */
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {AppModule} from '.app/app.module';
+
+platformBrowserDynamic().bootstrapModule(AppModule);
+
+/* In JavaScript each file is a module and all objects defined in that file belong to that module.
+*/
+import {NgModule} from '@angular/core';
+import {AppComponent} from './app-component';
+
+export class AppModule { }
+
